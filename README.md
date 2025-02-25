@@ -13,12 +13,14 @@
 
 Das Projekt **'EventManager'** dient als Beispiel für die Entwicklung eines Event-Management-Systems. Es besteht aus mehreren Komponenten, die eine vollständige Anwendung ergeben.
 
-| Name | Beschreibung |
-|------|------------- |
-| **EventManager.ConApp** | Eine Konsolenanwendung zur Verwaltung von Veranstaltungen und Teilnehmern. Die Menü-Funktionen sind mit `throw new NotImplementedException();` markiert und müssen implementiert werden. |
-| **EventManager.Logic** | Enthält die Geschäftslogik und Datenzugriffsschicht. |
-| **EventManager.Logic.Contracts** | Definiert alle Schnittstellen für das System. |
-| **EventManager.Logic.DataContext** | Enthält den `EventManagerContext`, der für die Verwaltung der Datenbankverbindung zuständig ist. |
+| Name | Beschreibung | Typ |
+|------|------------- |-----|
+| **EventManager.Common**        | In diesem Projekt werden alle Klassen gesammelt, die in anderen Projekten verwendet werden (Schnittstellen, Hilfsfunktionen usw.). | Bibliothek |
+| EventManager.Common.Contracts  | In diesem Abschnitt befinden sich alle Schnittstellen für die Date-Objekte. | Bibliothek |
+| **EventManager.Logic**         | In diesem Projekt sind alle Schnittstellen und der Datenzugriff definiert. | Bibliothek |
+| EventManager.Logic.Contracts   | In diesem Abschnitt befinden sich alle Schnittstellen. | Bibliothek |
+| EventManager.Logic.DataContext | In diesem Abschnitt befindet sich der Data-Kontext (`EventManagerContext`). | Bibliothek |
+| **EventManager.ConApp**        | Konsolenanwendung zum Starten des Programms und zur Implementierung des Menüsystems. Menüfunktionen sind mit *throw new NotImplementedException()* markiert. | Konsolenanwendung |
 
 ---
 
